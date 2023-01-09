@@ -5,24 +5,28 @@ body {
 .greeting-header {
   padding: 80px 20px;
   font-family: "Playfair Display", serif;
-  background-image: url(/images/fresh-palm-leaves-beige_2.jpg);
-  background-size: 1347px 300px;
+  background-image: url(/images/gold-branch-foliage-beige-banner-background.jpg);
+  background-size: cover;
   margin-bottom: 60px;
+}
+.greeting-card {
+  border: 8px solid white;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+  width: 600px;
+  height: 200px;
+  margin-left: 350px;
+  padding-top: 40px;
+  background-color: beige;
 }
 
 .profile-photo {
   width: 250px;
+  border: 8px solid white;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
-
 .block {
   display: block;
 }
-
 .center {
   text-align: center !important;
-}
-
-.profile-photo {
-  border: 8px solid white;
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
