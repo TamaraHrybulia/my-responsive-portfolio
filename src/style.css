@@ -1,22 +1,29 @@
 body {
   font-family: "Poppins", sans-serif;
+  color: #4c3f53;
 }
 
 .greeting-header {
   padding: 80px 20px;
   font-family: "Playfair Display", serif;
-  background-image: url(/images/gold-branch-foliage-beige-banner-background.jpg);
-  background-size: cover;
+  background-image: url(/images/2.jpg);
+  background-size: 100% 100%;
   margin-bottom: 60px;
 }
 .greeting-card {
-  border: 8px solid white;
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
   width: 600px;
   height: 200px;
   margin-left: 350px;
   padding-top: 40px;
-  background-color: beige;
+  color: white;
+  font-family: "Satisfy", cursive;
+}
+
+.greeting-card h1 {
+  font-size: 60px;
+}
+.greeting-card h2 {
+  font-size: 40px;
 }
 
 .profile-photo {
@@ -24,6 +31,7 @@ body {
   border: 8px solid white;
   box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
+
 .block {
   display: block;
 }
