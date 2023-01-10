@@ -29,126 +29,139 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div class="greeting-header center">
+    <div class="greeting-header text-center">
       <div class="greeting-card">
         <h1>Hi! I'm Tamara Hrybulia</h1>
         <h2>Front-end developer based in Ukraine</h2>
       </div>
     </div>
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col">
-          <img
-            class="img-fluid profile-photo"
-            src="/images/portfolio-photo.jpg"
-            alt="Tamara's profile photo"
-          />
+    <div class="container-fluid">
+      <div class="row intoduction-row">
+        <div class="col-6">
+          <div class="main-photo-section">
+            <div class="photo">
+              <img
+                class="img-fluid profile-photo"
+                src="/images/portfolio-photo.jpg"
+                alt="Tamara's profile photo"
+              />
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h3>About me</h3>
-          <p>
-            Hi! My name is Tamara and I'm a software developer, based in
-            Ukraine, Europe. I enjoy creating things that live on the internet.
-            I am flexible and adaptable to any environment and can easily learn
-            any new technology. And now I’m currently seeking new opportunities
-            in front-end development. Hope you enjoy my portfolio and feel free
-            to contact me
-          </p>
+        <div class="col-6">
+          <div class="about-me">
+            <h3><span class="underline"> About me </span></h3>
+
+            <p class="introduction">
+              Hi! My name is Tamara and I'm a software developer, based in
+              Ukraine, Europe. <br /><br />
+              I enjoy creating things that live on the internet. I am flexible
+              and adaptable to any environment and can easily learn any new
+              technology. And now I’m currently seeking new opportunities in
+              front-end development. <br /><br />
+              Hope you enjoy my portfolio and feel free to contact me!
+            </p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6">
-          <h3>Technologies I've been working with:</h3>
-        </div>
-        <div class="col-6">
-          <div class="row">
-            <div class="col-3 center">
+      <div class="technologies-section">
+        <h3 class="mb-5">
+          <span class="underline">Technologies </span> I've been working with:
+        </h3>
+        <div class="container mb-5">
+          <div class="row technologies-logos-1">
+            <div class="col-2 p-0 center skills-block">
               <img
-                class="img-fluid block center"
+                class="img-fluid skills-icon"
                 src="/images/html.png"
                 alt="html-logo"
               />
-              <small class="block center">HTML</small>
+              <small class="block">HTML</small>
             </div>
-            <div class="col-3 center">
+            <div class="col-2 p-0 center skills-block">
               <img
-                class="img-fluid block center"
+                class="img-fluid skills-icon"
                 src="/images/css.png"
                 alt="css-logo"
               />
-              <small class="block center">CSS</small>
+              <small class="block">CSS</small>
             </div>
-            <div class="col-3 center">
+            <div class="col-2 p-0 center skills-block">
               <img
-                class="img-fluid block center"
+                class="img-fluid skills-icon"
                 src="/images/javascript.png"
                 alt="javascript-logo"
               />
-              <small class="Java Script">HTML</small>
+              <small class="block center">JavaScript</small>
             </div>
-            <div class="col-3 center">
+            <div class="col-2 p-0 center skills-block">
               <img
-                class="img-fluid block center"
-                src="/images/editor.png"
-                alt="editor-logo"
-              />
-              <small class="block center">Editor</small>
-            </div>
-            <div class="col-3 center">
-              <img
-                class="img-fluid block center"
-                src="/images/api.png"
-                alt="api-logo"
-              />
-              <small class="block center">API</small>
-            </div>
-            <div class="col-3 center">
-              <img
-                class="img-fluid block center"
+                class="img-fluid skills-icon"
                 src="/images/github.png"
                 alt="github-logo"
               />
-              <small class="block center">GitHub</small>
+              <small class="block">GitHub</small>
             </div>
-            <div class="col-3 center">
+          </div>
+          <div class="row technologies-logos-2">
+            <div class="col-2 p-0 center skills-block">
               <img
-                class="img-fluid block center"
+                class="img-fluid skills-icon"
+                src="/images/editor.png"
+                alt="editor-logo"
+              />
+              <small class="block">Editor</small>
+            </div>
+            <div class="col-2 p-0 center skills-block">
+              <img
+                class="img-fluid skills-icon"
+                src="/images/api.png"
+                alt="api-logo"
+              />
+              <small class="block">API</small>
+            </div>
+
+            <div class="col-2 p-0 center skills-block">
+              <img
+                class="img-fluid skills-icon"
                 src="/images/bootstrap.png"
                 alt="bootstrap-logo"
               />
-              <small class="block center">Bootstrap</small>
+              <small class="block">Bootstrap</small>
             </div>
-            <div class="col-3 center">
+            <div class="col-2 p-0 center skills-block">
               <img
-                class="img-fluid block center"
+                class="img-fluid skills-icon"
                 src="/images/hosting.png"
                 alt="hosting-logo"
               />
-              <small class="block center">Hosting</small>
+              <small class="block">Hosting</small>
             </div>
-            <div class="col-3 center">
+          </div>
+          <div class="row technologies-logos-3">
+            <div class="col-2 p-0 center skills-block">
               <img
-                class="img-fluid block center"
+                class="img-fluid skills-icon"
                 src="/images/flexbox.png"
                 alt="flexbox-logo"
               />
-              <small class="block center">Flexbox</small>
+              <small class="block">Flexbox</small>
             </div>
-            <div class="col-3 center">
+            <div class="col-2 p-0 center skills-block">
               <img
-                class="img-fluid block center"
+                class="img-fluid skills-icon"
                 src="/images/seo.png"
                 alt="seo-logo"
               />
-              <small class="block center">SEO</small>
+              <small class="block">SEO</small>
             </div>
-            <div class="col-3 center">
+            <div class="col-2 p-0 center skills-block">
               <img
-                class="img-fluid block center"
+                class="img-fluid skills-icon"
                 src="/images/responsive.png"
                 alt="responsive-logo"
               />
-              <small class="block center">Responsive</small>
+              <small class="block">Responsive</small>
             </div>
           </div>
         </div>
