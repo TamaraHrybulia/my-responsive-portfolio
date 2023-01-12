@@ -1,6 +1,6 @@
 :root {
   --main-color: #4c3f53;
-  --secondary-color: #040a05;
+  --secondary-color: #078b8a;
 }
 
 .block {
@@ -11,8 +11,13 @@
   margin: 0 auto;
 }
 
-.underline {
-  border-bottom: 3px solid var(--secondary-color);
+.section-name-style {
+  font-weight: 500;
+  color: white;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.2);
+  padding: 5px;
 }
 
 body {
@@ -78,8 +83,11 @@ p.introduction {
 }
 
 .about-me h3 {
-  font-weight: 500;
   margin-bottom: 25px;
+}
+
+.technologies-section h3 {
+  margin-left: -150px;
 }
 
 .main-photo-section {
@@ -102,10 +110,7 @@ br {
   margin-bottom: 30px;
 }
 
-.technologies-section h3 {
-  margin-left: 130px;
-}
-.container-with-technologies {
+.container .with-technologies {
   max-width: 500px;
   box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.2);
   padding-top: 20px;
@@ -113,7 +118,11 @@ br {
   margin: 0 auto 40px;
 }
 
-.container {
+.container .with-technologies-name {
+  max-width: 500px;
+}
+
+.container .main {
   margin-top: 100px;
 }
 
@@ -153,7 +162,7 @@ br {
   .photo::after {
     width: 230px;
     height: 260px;
-    left: 30px;
+    left: 80px;
   }
 
   .about-me {
