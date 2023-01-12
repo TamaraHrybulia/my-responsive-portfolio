@@ -20,11 +20,55 @@
   padding: 5px;
 }
 
+.branding-button {
+  text-decoration: none;
+  color: white;
+  background-color: var(--main-color);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: var(--main-color);
   background-image: url(/images/shadow-leaves.jpg);
   background-size: 100% 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+.weather-project-links a {
+  font-size: 40px;
+  color: var(--secondary-color);
+  margin-right: 30px;
+}
+
+.travel-project-links a {
+  font-size: 40px;
+  color: var(--secondary-color);
+  margin-left: 30px;
+}
+
+.travel-project-links,
+.weather-project-links {
+  margin-top: -10px;
+}
+
+a.branding-button:hover {
+  transition: all 150ms ease-in-out;
+  opacity: 0.7;
 }
 
 .greeting-header {
@@ -61,25 +105,42 @@ body {
   display: block;
   position: absolute;
   width: 380px;
-  height: 510px;
+  height: 520px;
   border-radius: 4px;
-  top: -40px;
+  top: -30px;
   left: -60px;
   z-index: -1;
   background-image: url(/images/fairy_forest.jpg);
   background-size: cover;
 }
 
-p.introduction {
+.introduction,
+.project-description-1,
+.project-description-2 {
   background-color: white;
   padding: 50px 30px;
   border-radius: 4px;
   box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.2);
-  line-height: 2em;
+  line-height: 1.7em;
+  font-size: 20px;
 }
 
-.about-me {
+.project-description-1 {
+  margin-left: -60px;
+}
+
+.project-description-2 {
+  margin-right: -60px;
+}
+
+.about-me,
+.project-details {
   text-align: right;
+}
+
+.project-row-2 .project-details {
+  text-align: left;
+  z-index: 1;
 }
 
 .about-me h3 {
@@ -90,12 +151,14 @@ p.introduction {
   margin-left: -150px;
 }
 
-.main-photo-section {
-  margin-left: 100px;
+.project-details h3 {
+  color: var(--secondary-color);
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-br {
-  padding-bottom: 10px;
+.main-photo-section {
+  margin-left: 100px;
 }
 
 .intoduction-row {
@@ -124,6 +187,27 @@ br {
 
 .container .main {
   margin-top: 100px;
+}
+
+.project-image {
+  border-radius: 10px;
+  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.2);
+  border: 10px solid var(--secondary-color);
+}
+
+.project-technology {
+  font-size: 25px;
+  margin: 12px 5px;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.container-fluid.projects-section {
+  max-width: 1400px;
+}
+
+.project-row-1 {
+  margin-bottom: 100px;
 }
 
 @media (max-width: 992px) {
@@ -171,6 +255,10 @@ br {
 
   .about-me h3 {
     font-size: 18px;
+  }
+
+  .branding-button {
+    font-size: 14px;
   }
 
   p.introduction {
