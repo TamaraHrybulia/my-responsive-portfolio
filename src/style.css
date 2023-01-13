@@ -136,7 +136,8 @@ a.branding-button:hover {
 
 .introduction,
 .project-description-1,
-.project-description-2 {
+.project-description-2,
+.branding-card {
   background-color: white;
   padding: 50px 30px;
   border-radius: 4px;
