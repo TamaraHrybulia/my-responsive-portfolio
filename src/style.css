@@ -59,6 +59,16 @@ i.loading {
   color: var(--main-color);
 }
 
+nav {
+  color: var(--main-color) !important;
+}
+
+.logo {
+  font-family: "Satisfy", cursive;
+  font-size: 30px;
+  color: var(--main-color) !important;
+}
+
 .weather-project-links a {
   font-size: 30px;
   color: var(--secondary-color);
@@ -98,7 +108,7 @@ a.branding-button:hover {
 }
 
 .greeting-header {
-  padding: 80px 20px 30px;
+  padding: 10px 20px 30px;
   margin: 0 auto 60px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -272,7 +282,6 @@ img.certificate {
 
 @media (max-width: 992px) {
   .greeting-header {
-    padding-top: 10px;
     margin: 0 auto 20px;
   }
   .greeting-card {
