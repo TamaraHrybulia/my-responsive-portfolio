@@ -240,8 +240,14 @@ a.branding-button:hover {
 
 .skills-icon {
   max-width: 60px;
-  filter: grayscale(1);
+  filter: grayscale(80%);
+  transition: all 100ms ease-in-out;
 }
+
+.skills-icon:hover {
+  filter: none;
+}
+
 .skills-block {
   margin-bottom: 30px;
 }
