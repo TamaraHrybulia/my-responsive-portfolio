@@ -59,14 +59,24 @@ i.loading {
   color: var(--main-color);
 }
 
-nav {
-  color: var(--main-color) !important;
+.navbar {
+  font-size: 15px;
+  line-height: 0.5;
 }
 
-.logo {
+.nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.navbar-brand.logo {
   font-family: "Satisfy", cursive;
   font-size: 30px;
-  color: var(--main-color) !important;
+  color: white;
 }
 
 .weather-project-links a {
@@ -115,15 +125,14 @@ a.branding-button:hover {
 .greeting-card {
   max-width: 600px;
   max-height: 200px;
-  padding-top: 40px;
-  font-family: "Satisfy", cursive;
+  padding-top: 70px;
 }
 
 .greeting-card h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 .greeting-card h2 {
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .contacts-section {
@@ -287,12 +296,6 @@ img.certificate {
   .greeting-card {
     margin: 0 auto;
   }
-  .greeting-card h1 {
-    font-size: 60px;
-  }
-  .greeting-card h2 {
-    font-size: 40px;
-  }
 
   .container {
     margin-top: 80px;
@@ -395,10 +398,10 @@ img.certificate {
   }
 
   .greeting-card h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .greeting-card h2 {
-    font-size: 23px;
+    font-size: 18px;
   }
 
   .project-details h3 {
