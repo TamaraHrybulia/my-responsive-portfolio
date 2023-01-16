@@ -33,13 +33,15 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div class="greeting-header">
+    <div class="greeting-header" id="header">
       <nav
         class="navbar fixed-top navbar-expand-lg"
         style="background-color: rgb(76, 63, 83, 0.3)"
       >
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="/">Tamara Hrybulia</a>
+          <a class="navbar-brand logo" href="/" title="homepage"
+            >Tamara Hrybulia</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -57,21 +59,26 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/" title="homepage">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/projects.html">Projects</a>
+                <a class="nav-link" href="/projects.html" title="projects page"
+                  >Projects</a
+                >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link active"
                   aria-current="page"
                   href="/experience.html"
+                  title="experience page"
                   >Experience</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contacts.html">Contacts</a>
+                <a class="nav-link" href="/contacts.html" title="contact page"
+                  >Contacts</a
+                >
               </li>
             </ul>
           </div>
@@ -82,7 +89,7 @@
       </div>
     </div>
     <div class="container experience mb-4">
-      <h3 class="section-name-style">Certifications</h3>
+      <h2 class="section-name-style">Certifications</h2>
       <div class="certificates-section text-center">
         <div class="row g-5 mb-5">
           <div class="col-lg-6">
@@ -128,7 +135,7 @@
         </div>
       </div>
       <div class="resume-section">
-        <h3 class="section-name-style">CHECK OUT MY RÉSUMÉ:</h3>
+        <h2 class="section-name-style">CHECK OUT MY RÉSUMÉ:</h2>
         <div class="resume-button center">
           <a
             href="#"

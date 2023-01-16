@@ -1,37 +1,7 @@
 :root {
   --main-color: #4c3f53;
   --secondary-color: #078b8a;
-}
-
-.block {
-  display: block;
-}
-.center {
-  text-align: center !important;
-  margin: 0 auto;
-}
-
-.section-name-style {
-  font-size: 23px;
-  font-weight: 500;
-  color: white;
-  background-color: var(--secondary-color);
-  border-radius: 4px;
-  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.2);
-  padding: 5px;
-}
-
-.branding-button {
-  text-decoration: none;
-  color: white;
-  background-color: var(--main-color);
-  font-size: 17px;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-.buttons {
-  margin-top: 30px;
+  --box-shadow: var(--box-shadow);
 }
 
 body {
@@ -53,6 +23,56 @@ ul {
 
 li {
   display: inline-block;
+}
+
+.block {
+  display: block;
+}
+.center {
+  text-align: center !important;
+  margin: 0 auto;
+}
+
+.section-name-style {
+  font-size: 23px;
+  font-weight: 500;
+  color: white;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  padding: 5px;
+}
+
+.branding-button {
+  text-decoration: none;
+  color: white;
+  background-color: var(--main-color);
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+a.branding-button:hover {
+  transition: all 150ms ease-in-out;
+  opacity: 0.7;
+}
+
+.resume-button a.branding-button .wait-for-resume {
+  display: none;
+}
+
+.resume-button a.branding-button:hover .load-resume {
+  display: none;
+}
+
+.resume-button a.branding-button:hover .wait-for-resume {
+  display: inline;
+  transition: all 150ms ease-in-out;
+  opacity: 0.7;
 }
 
 i.loading {
@@ -80,42 +100,23 @@ i.loading {
   color: white;
 }
 
-.weather-project-links a {
-  font-size: 30px;
-  color: var(--secondary-color);
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
+.weather-project-links a,
 .travel-project-links a {
   font-size: 30px;
   color: var(--secondary-color);
   padding-left: 10px;
   padding-right: 10px;
+  transition: all 100ms ease-in-out;
+}
+
+.weather-project-links a:hover,
+.travel-project-links a:hover {
+  color: var(--main-color);
 }
 
 .travel-project-links,
 .weather-project-links {
   margin-top: -15px;
-}
-
-a.branding-button:hover {
-  transition: all 150ms ease-in-out;
-  opacity: 0.7;
-}
-
-.resume-button a.branding-button .wait-for-resume {
-  display: none;
-}
-
-.resume-button a.branding-button:hover .load-resume {
-  display: none;
-}
-
-.resume-button a.branding-button:hover .wait-for-resume {
-  display: inline;
-  transition: all 150ms ease-in-out;
-  opacity: 0.7;
 }
 
 .greeting-header {
@@ -156,6 +157,10 @@ a.branding-button:hover {
   color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
 }
 
+.main-photo-section {
+  margin-left: 100px;
+}
+
 .profile-photo {
   max-width: 300px;
   border: 8px solid white;
@@ -176,20 +181,18 @@ a.branding-button:hover {
   height: 450px;
   border-radius: 4px;
   top: -25px;
-
   z-index: -1;
   background-image: url(/images/fairy_forest.jpg);
   background-size: cover;
 }
 
-.introduction,
 .project-description-1,
 .project-description-2,
 .branding-card {
   background-color: white;
   padding: 30px 30px;
   border-radius: 4px;
-  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
   line-height: 1.7em;
   font-size: 15px;
 }
@@ -202,7 +205,7 @@ a.branding-button:hover {
   margin-right: -60px;
 }
 
-.about-me,
+.about-me-section,
 .project-details {
   text-align: right;
 }
@@ -212,11 +215,11 @@ a.branding-button:hover {
   z-index: 1;
 }
 
-.about-me h3 {
+.about-me.section h3 {
   font-size: 23px;
 }
 
-.experience h3 {
+.experience h2 {
   margin-bottom: 50px;
 }
 
@@ -228,10 +231,6 @@ a.branding-button:hover {
 .project-details h3 {
   color: var(--secondary-color);
   margin-bottom: 20px;
-}
-
-.main-photo-section {
-  margin-left: 100px;
 }
 
 .intoduction-row {
@@ -255,7 +254,7 @@ a.branding-button:hover {
 .container .with-technologies {
   max-width: 500px;
   border-radius: 4px;
-  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
   padding-top: 20px;
   background-color: white;
   margin: 0 auto 40px;
@@ -271,13 +270,13 @@ a.branding-button:hover {
 
 .project-image {
   border-radius: 10px;
-  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
   border: 10px solid var(--secondary-color);
 }
 
 img.certificate {
   border-radius: 15px;
-  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 
 .project-technology {
@@ -386,14 +385,11 @@ img.certificate {
     left: 170px;
   }
 
-  .about-me {
+  .about-me-section {
     text-align: left;
   }
 
-  .about-me h3 {
-    font-size: 18px;
-  }
-
+  .about-me-section h3,
   .contacts-section h3 {
     font-size: 18px;
   }
