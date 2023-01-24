@@ -7,7 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: var(--main-color);
-  background-image: url(/images/shadow-leaves.jpg);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/300/original/shadow-leaves.jpg?1674589938);
   background-size: 100% 100%;
 }
 
