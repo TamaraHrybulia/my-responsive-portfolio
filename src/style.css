@@ -7,7 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: var(--main-color);
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/300/original/shadow-leaves.jpg?1674589938);
+  background-image: url(/images/shadow-leaves-min.jpg);
   background-size: 100% 100%;
 }
 
@@ -182,7 +182,7 @@ i.loading {
   border-radius: 4px;
   top: -25px;
   z-index: -1;
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/305/original/fairy_forest.jpg?1674592056);
+  background-image: url(/images/fairy_forest-min.jpg);
   background-size: cover;
 }
 
