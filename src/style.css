@@ -1,7 +1,7 @@
 :root {
   --main-color: #4c3f53;
   --secondary-color: #078b8a;
-  --box-shadow: var(--box-shadow);
+  --box-shadow: 3px 3px 6px 2px grey;
 }
 
 body {
@@ -100,8 +100,8 @@ i.loading {
   color: white;
 }
 
-.weather-project-links a,
-.travel-project-links a {
+.project-links a,
+.project-links a {
   font-size: 30px;
   color: var(--secondary-color);
   padding-left: 10px;
@@ -109,13 +109,13 @@ i.loading {
   transition: all 100ms ease-in-out;
 }
 
-.weather-project-links a:hover,
-.travel-project-links a:hover {
+.project-links a:hover,
+.project-links a:hover {
   color: var(--main-color);
 }
 
-.travel-project-links,
-.weather-project-links {
+.project-links,
+.project-links {
   margin-top: -15px;
 }
 
@@ -186,8 +186,8 @@ i.loading {
   background-size: cover;
 }
 
-.project-description-1,
-.project-description-2,
+.project-description-right,
+.project-description-left,
 .branding-card {
   background-color: white;
   padding: 30px 30px;
@@ -197,11 +197,11 @@ i.loading {
   font-size: 15px;
 }
 
-.project-description-1 {
+.project-description-right {
   margin-left: -60px;
 }
 
-.project-description-2 {
+.project-description-left {
   margin-right: -60px;
 }
 
@@ -210,7 +210,7 @@ i.loading {
   text-align: right;
 }
 
-.line-2 .project-details {
+.line-left .project-details {
   text-align: left;
   z-index: 1;
 }
@@ -291,7 +291,8 @@ img.certificate {
   max-width: 1000px;
 }
 
-.project.line-1 {
+.project.line-right,
+.project.line-left {
   margin-bottom: 100px;
 }
 
@@ -415,10 +416,10 @@ img.certificate {
     margin-bottom: 30px;
   }
 
-  .project.line-1,
-  .project.line-2,
-  .line-1 .project-details,
-  .line-2 .project-details {
+  .project.line-right,
+  .project.line-left,
+  .line-right .project-details,
+  .line-left .project-details {
     text-align: center;
   }
 
@@ -426,15 +427,15 @@ img.certificate {
     font-size: 30px;
   }
 
-  .project-description-1,
-  .project-description-2 {
+  .project-description-right,
+  .project-description-left {
     margin: 0;
     padding: 15px;
     line-height: initial;
   }
 
-  .project-description-1 p,
-  .project-description-2 p {
+  .project-description-right p,
+  .project-description-left p {
     margin: 0;
   }
 
@@ -442,8 +443,8 @@ img.certificate {
     margin-bottom: 0;
   }
 
-  .travel-project-links,
-  .weather-project-links {
+  .project-links,
+  .project-links {
     margin-top: 0;
   }
 
@@ -484,8 +485,8 @@ img.certificate {
     margin: 0 5px 0;
   }
 
-  .travel-project-links,
-  .weather-project-links {
+  .project-links,
+  .project-links {
     margin: 0;
   }
 
